@@ -381,14 +381,15 @@ footer .copy-right{
     }
     #my-qr-reader{
         margin-bottom: 30px;
-        min-width: 90%;
-        height: auto;
+        min-width: 70%;
+        height: 60%;
     }
     #qr-shaded-region{
         display: none;
     }
     #my-qr-reader video{
-        width: auto;
+        width: 50%;
+        height: 30%;
     }
     #my-qr-reader__scan_region{
         min-height: 280px;
