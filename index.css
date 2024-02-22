@@ -379,9 +379,6 @@ footer .copy-right{
     #openqr_btn{
         display: block;
     }
-    #my-qr-reader video{
-        display: block;
-    }
     #my-qr-reader{
         margin-bottom: 30px;
         width: 90%;
