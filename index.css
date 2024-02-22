@@ -21,7 +21,7 @@
     border-radius: 5px;
     padding: 20px;
     padding-right: 35px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color:rgba(66, 65, 65, 0.575);
     backdrop-filter: blur(50%);
     -webkit-backdrop-filter: blur(50%);
 }
@@ -40,6 +40,9 @@
 }
 .form-content input:focus{
     outline: 1px solid lightgreen;
+}
+.form-content input::-webkit-input-placeholder{
+    color:white
 }
 .form-content button{
     margin-top: 5px;
@@ -324,7 +327,9 @@ span.desk {
     color: rgb(59, 0, 0);
     cursor:pointer;
 }
-
+footer .copy-right{
+    display: none;
+}
 
 @media (max-width:720px) {
     .web-form{
@@ -347,13 +352,16 @@ span.desk {
         overflow: hidden;
         height: 100vh;
         width: 100vw;
-    
         font-family: "Open Sans", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 500;
+        font-weight: 700;
         font-style: normal;
         font-variation-settings:
             "wdth" 100;
+    }
+    .popup {
+        margin-top: 90px;
+        
     }
     #my-qr-reader video{
         margin-bottom: 5px;
@@ -363,5 +371,8 @@ span.desk {
     }
     .you-qr-result{
         margin-top: 220px;
+    }
+    footer .copy-right{
+        display: flex;
     }
 }
