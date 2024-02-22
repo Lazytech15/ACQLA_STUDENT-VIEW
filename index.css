@@ -381,19 +381,22 @@ footer .copy-right{
     }
     #my-qr-reader{
         margin-bottom: 30px;
-        max-width: 90%;
-        max-height: 37%;
+        min-width: 90%;
+        height: auto;
     }
     #qr-shaded-region{
         display: none;
     }
+    #my-qr-reader video{
+        width: auto;
+    }
     #my-qr-reader__scan_region{
-        max-height: 280px;
+        min-height: 280px;
         border-radius: 10px;
     }
     #html5-qrcode-button-camera-stop{
         margin-top: -10px;
-        max-width: 100%;
+        min-width: 100%;
         padding: 20px;
         border-radius: 10px;
     }
