@@ -1,1 +1,319 @@
-const _0x5049ca=_0x2e72;(function(_0x580d4c,_0x2e22c7){const _0x268d97=_0x2e72,_0x2305dd=_0x580d4c();while(!![]){try{const _0x582b0b=parseInt(_0x268d97(0xb8))/0x1+-parseInt(_0x268d97(0xe8))/0x2*(-parseInt(_0x268d97(0xdf))/0x3)+parseInt(_0x268d97(0x10f))/0x4*(-parseInt(_0x268d97(0xe4))/0x5)+-parseInt(_0x268d97(0x10e))/0x6*(parseInt(_0x268d97(0xbd))/0x7)+parseInt(_0x268d97(0xbb))/0x8*(-parseInt(_0x268d97(0xca))/0x9)+-parseInt(_0x268d97(0xd3))/0xa+-parseInt(_0x268d97(0x10b))/0xb*(-parseInt(_0x268d97(0xe5))/0xc);if(_0x582b0b===_0x2e22c7)break;else _0x2305dd['push'](_0x2305dd['shift']());}catch(_0x9b1336){_0x2305dd['push'](_0x2305dd['shift']());}}}(_0x26b6,0x6f0bb));import{initializeApp}from'https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js';const firebaseConfig={'apiKey':_0x5049ca(0xe1),'authDomain':_0x5049ca(0xeb),'projectId':_0x5049ca(0xe0),'storageBucket':_0x5049ca(0x106),'messagingSenderId':_0x5049ca(0xd6),'appId':_0x5049ca(0xc1)};import{getFirestore,doc,getDoc,collection,addDoc,setDoc,updateDoc,deleteDoc,deleteField,onSnapshot}from'https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js';const app=initializeApp(firebaseConfig);firebase[_0x5049ca(0x100)](firebaseConfig);const db=firebase[_0x5049ca(0xfc)](),client=getFirestore();let deskStat=[],studeData,count,Tablecells,Late;const close_form=document[_0x5049ca(0xf1)](_0x5049ca(0xe2)),stid=document[_0x5049ca(0xf1)]('stud-id'),stname=document[_0x5049ca(0xf1)](_0x5049ca(0xf4)),stsec=document[_0x5049ca(0xf1)](_0x5049ca(0xb9)),courseName=document['getElementById']('course-name'),save_btn=document['getElementById'](_0x5049ca(0xc2)),tname=document[_0x5049ca(0xf1)](_0x5049ca(0xcd));async function checkSit(){const _0x4292f0=_0x5049ca;db['collection'](_0x4292f0(0xf7))['onSnapshot'](_0x24d46a=>{const _0x261656=_0x4292f0;_0x24d46a[_0x261656(0xf3)](_0x3921db=>{const _0x5bb3ca=_0x261656;studeData=_0x3921db[_0x5bb3ca(0x10c)]();const _0x1af08e=_0x3921db['id'];deskStat['push']({...studeData,'dataID':_0x1af08e}),deskStat['forEach'](_0x2b57ea=>{const _0x45cad0=_0x5bb3ca;if(_0x2b57ea[_0x45cad0(0xce)]===_0x45cad0(0x10d)&&_0x2b57ea[_0x45cad0(0xf6)]===_0x45cad0(0x108)){const _0x399e52=document['getElementsByTagName']('td');_0x399e52[_0x2b57ea[_0x45cad0(0xba)]][_0x45cad0(0xc9)]='background-color:\x20yellow;\x20padding:10px;\x20color:\x20navy;',_0x399e52[_0x2b57ea[_0x45cad0(0xba)]][_0x45cad0(0xda)]='<span\x20class=\x22desk\x22>'+_0x2b57ea[_0x45cad0(0x104)]+_0x45cad0(0x102)+_0x45cad0(0xf8);}else{if(_0x2b57ea[_0x45cad0(0xce)]===_0x45cad0(0x10d)&&_0x2b57ea[_0x45cad0(0xf6)]===_0x45cad0(0xe3)){const _0x307f1c=document[_0x45cad0(0xdd)]('td');_0x307f1c[_0x2b57ea[_0x45cad0(0xba)]][_0x45cad0(0xc9)]=_0x45cad0(0xea),_0x307f1c[_0x2b57ea[_0x45cad0(0xba)]][_0x45cad0(0xda)]='<span\x20class=\x22desk\x22>'+_0x2b57ea[_0x45cad0(0x104)]+_0x45cad0(0x102)+'Occupied!\x20<br>\x20Ontime';}else{const _0x424826=document[_0x45cad0(0xdd)]('td');_0x424826[_0x2b57ea[_0x45cad0(0xba)]][_0x45cad0(0xc9)]=_0x45cad0(0xe9);}}});});});}function _0x2e72(_0x3942b2,_0x3543a1){const _0x26b653=_0x26b6();return _0x2e72=function(_0x2e72b7,_0x202ddf){_0x2e72b7=_0x2e72b7-0xb5;let _0x1bd605=_0x26b653[_0x2e72b7];return _0x1bd605;},_0x2e72(_0x3942b2,_0x3543a1);}document[_0x5049ca(0xc8)](_0x5049ca(0xc5),function(){const _0x3b3174=_0x5049ca;let _0x3d8bc9=document[_0x3b3174(0xdd)]('td');for(let _0x1888ba=0x0;_0x1888ba<_0x3d8bc9['length'];_0x1888ba++){(function(_0x1bae66){const _0xd59c3d=_0x3b3174;_0x3d8bc9[_0x1bae66][_0xd59c3d(0xc8)]('click',function(){const _0x432cfa=_0xd59c3d;_0x3d8bc9[_0x1bae66]['innerHTML']!==''?alert(_0x432cfa(0x101)):(getDateHour(),Tablecells=_0x1bae66,Takepc(),document[_0x432cfa(0xf1)](_0x432cfa(0xcf))['style']=_0x432cfa(0xef));});}(_0x1888ba));}});let pcnumber=_0x5049ca(0xe6)+Tablecells,ToDeleteDoc;async function Takepc(){const _0x2266b7=_0x5049ca,_0x1985e4=Tablecells;pcnumber=_0x2266b7(0xe6)+Tablecells,ToDeleteDoc=doc(client,_0x2266b7(0x107),pcnumber),setDoc(ToDeleteDoc,{'Desk':_0x1985e4});}async function ToSaveData(){const _0xfe758=_0x5049ca,_0x2c66c2=Tablecells+0x1;pcnumber=_0xfe758(0xe6)+Tablecells,console[_0xfe758(0xbc)](pcnumber);var _0x5422e0=doc(client,_0xfe758(0xf7),pcnumber);setDoc(_0x5422e0,{'Desk':Tablecells,'Status':_0xfe758(0x10d),'Student_ID':stid[_0xfe758(0xd2)],'Student_Name':stname['value'],'Student_Section':stsec[_0xfe758(0xd2)],'Student_Course':courseName[_0xfe758(0xd2)],'Teacher_Name':tname[_0xfe758(0xd2)],'Com_Unit_Num':_0x2c66c2,'SchoolOnTime':Late,'Date_Scan':getDateHour()});}close_form['addEventListener'](_0x5049ca(0xd7),async function(){await deleteDoc(ToDeleteDoc),TypingCheckStudent(),setInterval(function(){const _0x28f6cc=_0x2e72;location[_0x28f6cc(0xed)]();},0x1388),document['getElementById']('web-form')['style']='display:\x20none;';}),save_btn[_0x5049ca(0xc8)]('click',async function(){const _0x3ca4b1=_0x5049ca;getDateHour();if(stid[_0x3ca4b1(0xd2)]===''||stname['value']===''||courseName[_0x3ca4b1(0xd2)]===''||tname[_0x3ca4b1(0xd2)]===''||stsec['value']==='')document[_0x3ca4b1(0xf1)](_0x3ca4b1(0xf2))[_0x3ca4b1(0xda)]=_0x3ca4b1(0xec),document[_0x3ca4b1(0xf1)]('pop-up-message')['style'][_0x3ca4b1(0xd4)]=_0x3ca4b1(0xd5),myPopup[_0x3ca4b1(0xf9)][_0x3ca4b1(0xd1)]('show');else Late===_0x3ca4b1(0x10a)?(document[_0x3ca4b1(0xf1)](_0x3ca4b1(0xf2))['innerHTML']=_0x3ca4b1(0x103),document['getElementById'](_0x3ca4b1(0xf2))['style']['textAlign']='center',myPopup[_0x3ca4b1(0xf9)][_0x3ca4b1(0xd1)](_0x3ca4b1(0xbe))):(await deleteDoc(ToDeleteDoc),ToSaveData(),document[_0x3ca4b1(0xf1)]('web-form')[_0x3ca4b1(0xc9)]=_0x3ca4b1(0xb6),document['getElementById'](_0x3ca4b1(0xd0))[_0x3ca4b1(0xc9)]=_0x3ca4b1(0xfe),document[_0x3ca4b1(0xf1)](_0x3ca4b1(0xf2))[_0x3ca4b1(0xda)]=_0x3ca4b1(0xbf),document[_0x3ca4b1(0xf1)](_0x3ca4b1(0xf2))[_0x3ca4b1(0xc9)]['textAlign']=_0x3ca4b1(0xd5),myPopup[_0x3ca4b1(0xf9)][_0x3ca4b1(0xd1)]('show'),setInterval(function(){const _0x251548=_0x3ca4b1;location[_0x251548(0xed)]();},0x1388));});const cp_stid=document[_0x5049ca(0xf1)]('cp-stud-id'),cp_stname=document[_0x5049ca(0xf1)](_0x5049ca(0xb5)),cp_stsec=document[_0x5049ca(0xf1)](_0x5049ca(0xb7)),cp_courseName=document['getElementById'](_0x5049ca(0xcc)),cp_tname=document[_0x5049ca(0xf1)](_0x5049ca(0xde)),qrbtn=document[_0x5049ca(0xf1)](_0x5049ca(0xf5));qrbtn[_0x5049ca(0xc8)](_0x5049ca(0xd7),function(){const _0x341b9d=_0x5049ca;getDateHour();if(cp_stid['value']===''||cp_stname['value']===''||cp_courseName[_0x341b9d(0xd2)]===''||cp_tname[_0x341b9d(0xd2)]===''||cp_stsec[_0x341b9d(0xd2)]==='')document[_0x341b9d(0xf1)]('pop-up-message')[_0x341b9d(0xda)]=_0x341b9d(0xec),document['getElementById'](_0x341b9d(0xf2))['style'][_0x341b9d(0xd4)]=_0x341b9d(0xd5),myPopup['classList'][_0x341b9d(0xd1)]('show');else{if(Late===_0x341b9d(0x10a))document[_0x341b9d(0xf1)](_0x341b9d(0xf2))[_0x341b9d(0xda)]=_0x341b9d(0x103),document['getElementById'](_0x341b9d(0xf2))['style'][_0x341b9d(0xd4)]=_0x341b9d(0xd5),myPopup[_0x341b9d(0xf9)][_0x341b9d(0xd1)](_0x341b9d(0xbe));else{myqrcode['classList'][_0x341b9d(0xd1)]('show'),document['getElementById'](_0x341b9d(0xe7))[_0x341b9d(0xc9)]=_0x341b9d(0xef);function _0x428cac(_0x5b66de){const _0x41d851=_0x341b9d;document[_0x41d851(0xd9)]===_0x41d851(0xff)||document[_0x41d851(0xd9)]===_0x41d851(0xd8)?setTimeout(_0x5b66de,0x1):document[_0x41d851(0xc8)](_0x41d851(0xc5),_0x5b66de);}_0x428cac(function(){const _0x4218f2=_0x341b9d;var _0x3043ef=document[_0x4218f2(0xf1)]('you-qr-result'),_0x1529ee,_0x3eee18=0x0;function _0x5f0d44(_0x127074,_0x3b0796){const _0x3216ea=_0x4218f2;if(_0x127074!==_0x1529ee){++_0x3eee18,_0x1529ee=_0x127074;let _0x1f74e6=_0x127074,_0x4ed51c;const _0x18b94b=_0x1f74e6[_0x3216ea(0xc3)](',');_0x1f74e6=_0x18b94b[0x1];const _0x4a82a1=_0x18b94b[0x2],_0x207722=_0x18b94b[0x3];createData(_0x1f74e6,_0x4a82a1,_0x207722),document[_0x3216ea(0xf1)](_0x3216ea(0xcf))[_0x3216ea(0xc9)]=_0x3216ea(0xb6),document[_0x3216ea(0xf1)](_0x3216ea(0xd0))['style']=_0x3216ea(0xfe),document[_0x3216ea(0xf1)](_0x3216ea(0xf2))[_0x3216ea(0xda)]='Submit\x20Successfully,\x20please\x20check\x20the\x20monitor\x20in\x20front\x20or\x20ask\x20the\x20teacher\x20if\x20its\x20reflect',document[_0x3216ea(0xf1)]('pop-up-message')[_0x3216ea(0xc9)][_0x3216ea(0xd4)]=_0x3216ea(0xd5),myPopup[_0x3216ea(0xf9)]['add'](_0x3216ea(0xbe)),_0x3043ef[_0x3216ea(0xda)]=_0x3216ea(0x109)+_0x127074;}}var _0x316cdf=new Html5QrcodeScanner(_0x4218f2(0xdb),{'fps':0xa,'qrbox':0xfa});_0x316cdf[_0x4218f2(0xfd)](_0x5f0d44);});}}});async function createData(_0x2ebf25,_0x51dc76,_0x1f49e7){const _0x515a81=_0x5049ca;var _0x28d2e4=doc(client,_0x515a81(0xf7),_0x2ebf25);setDoc(_0x28d2e4,{'Desk':_0x51dc76,'Status':'Occupied','Student_ID':cp_stid[_0x515a81(0xd2)],'Student_Name':cp_stname[_0x515a81(0xd2)],'Student_Section':cp_stsec[_0x515a81(0xd2)],'Student_Course':cp_courseName['value'],'Teacher_Name':cp_tname['value'],'Com_Unit_Num':_0x1f49e7,'SchoolOnTime':Late,'Date_Scan':getDateHour()});}closecamera[_0x5049ca(0xc8)]('click',function(){const _0x3631fe=_0x5049ca;myqrcode[_0x3631fe(0xf9)][_0x3631fe(0xf0)](_0x3631fe(0xbe)),document[_0x3631fe(0xf1)]('myqrcode')['style']=_0x3631fe(0xb6);}),window[_0x5049ca(0xc8)]('click',function(_0x1ba78e){const _0x286567=_0x5049ca;_0x1ba78e['target']==myqrcode&&myqrcode[_0x286567(0xf9)]['remove'](_0x286567(0xbe));}),closePopup['addEventListener'](_0x5049ca(0xd7),function(){const _0x31dae6=_0x5049ca;myPopup[_0x31dae6(0xf9)][_0x31dae6(0xf0)](_0x31dae6(0xbe));}),window['addEventListener'](_0x5049ca(0xd7),function(_0x346e9e){const _0x461a99=_0x5049ca;_0x346e9e[_0x461a99(0x105)]==myPopup&&myPopup[_0x461a99(0xf9)]['remove'](_0x461a99(0xbe));});function getDateHour(){const _0x282b77=_0x5049ca;let _0x10d531=new Date(),_0x182fb4=_0x10d531[_0x282b77(0xee)](),_0x4665ef=_0x10d531[_0x282b77(0xc0)](),_0x1e25a6=_0x182fb4>=0xc?'pm':'am';_0x182fb4=_0x182fb4%0xc,_0x182fb4=_0x182fb4?_0x182fb4:0xc,_0x4665ef=_0x4665ef<0xa?'0'+_0x4665ef:_0x4665ef;let _0x28a7e8=_0x182fb4+':'+_0x4665ef+_0x1e25a6,_0x2ec809=('0'+_0x10d531[_0x282b77(0xfb)]())['slice'](-0x2),_0x2b89e4=('0'+(_0x10d531[_0x282b77(0xdc)]()+0x1))['slice'](-0x2),_0x4dbe20=_0x10d531[_0x282b77(0xc4)](),_0x263efe=_0x2b89e4+'/'+_0x2ec809+'/'+_0x4dbe20,_0x26d86e=_0x28a7e8+'\x20'+_0x263efe;if(_0x10d531[_0x282b77(0xc0)]()>0x14)Late=_0x282b77(0x108);else _0x10d531[_0x282b77(0xc0)]()>0x28?Late=_0x282b77(0x10a):Late=_0x282b77(0xe3);return _0x26d86e;}async function TypingCheckStudent(){const _0x4ae718=_0x5049ca;let _0x3ab494=0x0;db[_0x4ae718(0xc7)](_0x4ae718(0x107))[_0x4ae718(0xfa)](_0x498636=>{const _0x18accd=_0x4ae718;_0x498636['forEach'](_0x51d99c=>{const _0x565b57=_0x2e72,_0x58e432=_0x51d99c['data']()[_0x565b57(0xba)],_0x308ca1=document['getElementsByTagName']('td');_0x308ca1[_0x58e432][_0x565b57(0xc9)]=_0x565b57(0xcb),_0x3ab494=_0x58e432;});if(_0x498636['size']===0x0){console[_0x18accd(0xbc)](_0x18accd(0xc6));const _0x2c1d19=document['getElementsByTagName']('td');_0x2c1d19[_0x3ab494][_0x18accd(0xc9)]='background-color:\x20lightgreen;\x20padding:\x2010px;';}});}window['onload']=function(){TypingCheckStudent(),checkSit();};function _0x26b6(){const _0x1c673d=['split','getFullYear','DOMContentLoaded','working','collection','addEventListener','style','9FnnnkH','background-color:\x20purple;\x20padding:\x2010px;\x20','cp-course-name','teacher-name','Status','web-form','pop-up-top','add','value','2035840dnQNLd','textAlign','center','316552887176','click','interactive','readyState','innerHTML','my-qr-reader','getMonth','getElementsByTagName','cp-teacher-name','9SZbeLZ','cpprog03','AIzaSyCOB2qEHCqj4ogZdjIH4Ff-tl-StyLShOk','close_form','false','615XHqxjF','1186464HEbUgC','B1-28_DESKTOPPCNUMBER-','myqrcode','426762fDViQc','background-color:\x20lightgreen;','background-color:\x20red;\x20padding:10px;','cpprog03.firebaseapp.com','Please\x20Fill\x20up\x20all\x20requirements\x20and\x20try\x20again','reload','getHours','display:\x20block;','remove','getElementById','pop-up-message','forEach','stud-name','qr-btn','SchoolOnTime','COMLAB-ATTENDANCE-TABLE','Occupied!\x20<br>\x20BUT\x20LATE!','classList','onSnapshot','getDate','firestore','render','display:none','complete','initializeApp','This\x20Pc\x20is\x20occupied!','</span>','Opps!\x20Its\x20look\x20like\x20your\x20too\x20late\x20to\x20take\x20this\x20attendance','Com_Unit_Num','target','cpprog03.appspot.com','SOME-IS-TYPING','true','You\x20scanned\x20','not\x20Allow','77BXubxc','data','Occupied','30XTbOZx','5864qvpoKd','cp-stud-name','display:\x20none;','cp-sect-name','449924odEzwG','sect-name','Desk','3760648AwyCrR','log','662683JryBrz','show','Submit\x20Successfully,\x20please\x20check\x20the\x20monitor\x20in\x20front\x20or\x20ask\x20the\x20teacher\x20if\x20its\x20reflect','getMinutes','1:316552887176:web:2d8b0fc17477132873d83d','save_btn'];_0x26b6=function(){return _0x1c673d;};return _0x26b6();}
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCOB2qEHCqj4ogZdjIH4Ff-tl-StyLShOk",
+  authDomain: "cpprog03.firebaseapp.com",
+  projectId: "cpprog03",
+  storageBucket: "cpprog03.appspot.com",
+  messagingSenderId: "316552887176",
+  appId: "1:316552887176:web:2d8b0fc17477132873d83d"
+};
+
+  import {
+    getFirestore, doc, getDoc, collection, addDoc, setDoc, updateDoc, deleteDoc, deleteField, onSnapshot
+  }
+  from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  const client = getFirestore();
+//Web-view
+let deskStat=[];
+let studeData;
+let count;
+let Tablecells;
+let Late;
+const close_form = document.getElementById('close_form');
+const stid = document.getElementById('stud-id');
+const stname = document.getElementById('stud-name');
+const stsec = document.getElementById('sect-name');
+const courseName = document.getElementById('course-name');
+const save_btn = document.getElementById('save_btn');
+const tname = document.getElementById('teacher-name');
+
+
+//web-view
+  async function checkSit(){
+
+    db.collection("COMLAB-ATTENDANCE-TABLE").onSnapshot((querySnapshot) => {
+      querySnapshot.forEach((studentdata) => {
+        studeData = studentdata.data();
+        const dataID = studentdata.id;
+        //console.log(data,dataID);
+        deskStat.push({ ...studeData,dataID});
+
+        deskStat.forEach((data)=>{
+          if (data.Status==="Occupied" && data.SchoolOnTime==="true"){
+            const cells = document.getElementsByTagName('td');
+            cells[data.Desk].style = "background-color: yellow; padding:10px; color: navy;";
+            cells[data.Desk].innerHTML = '<span class="desk">' + data.Com_Unit_Num + '</span>' + "Occupied! <br> BUT LATE!";
+          }else if (data.Status==="Occupied" && data.SchoolOnTime==="false"){
+            const cells = document.getElementsByTagName('td');
+            cells[data.Desk].style = "background-color: red; padding:10px;";
+            cells[data.Desk].innerHTML = '<span class="desk">' + data.Com_Unit_Num + '</span>' + "Occupied! <br> Ontime";
+          }else{
+            const cells = document.getElementsByTagName('td');
+            cells[data.Desk].style = "background-color: lightgreen;";
+          }
+         })
+      })
+    })
+  }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        let cells = document.getElementsByTagName('td');
+        for (let i = 0; i < cells.length; i++) {
+          (function(i) {
+            cells[i].addEventListener('click', function(){
+              if(cells[i].innerHTML !== ""){
+                alert("This Pc is occupied!");
+              }else{
+                getDateHour();
+                Tablecells = i;
+                Takepc();
+                document.getElementById('web-form').style="display: block;";
+              }
+            })
+          })(i); 
+        }
+      });
+
+      let pcnumber = "B1-28_DESKTOPPCNUMBER-"+Tablecells;
+      let ToDeleteDoc;
+      async function Takepc(){
+      const pcDisplay = Tablecells;  
+      pcnumber = "B1-28_DESKTOPPCNUMBER-"+Tablecells;
+        ToDeleteDoc = doc(client, "SOME-IS-TYPING",pcnumber);
+                setDoc( 
+                  ToDeleteDoc, {
+                    Desk : pcDisplay,
+            })
+      }
+
+      async function ToSaveData(){
+      const pcDisplay = Tablecells+1;  
+      pcnumber = "B1-28_DESKTOPPCNUMBER-"+Tablecells;
+      console.log(pcnumber);
+        var ref = doc(client, "COMLAB-ATTENDANCE-TABLE",pcnumber);
+                setDoc( 
+                ref, {
+                    Desk : Tablecells,
+                    Status : "Occupied",
+                    Student_ID : stid.value,
+                    Student_Name :stname.value,
+                    Student_Section : stsec.value,
+                    Student_Course : courseName.value,
+                    Teacher_Name : tname.value,
+                    Com_Unit_Num : pcDisplay,
+                    SchoolOnTime : Late,
+                    Date_Scan : getDateHour()
+            })
+        }
+
+      close_form.addEventListener('click', async function(){
+        await deleteDoc(ToDeleteDoc);
+        TypingCheckStudent();
+        setInterval(function() {
+          location.reload();
+      }, 5000);
+        document.getElementById('web-form').style="display: none;";
+      })
+      save_btn.addEventListener('click', async function(){
+        getDateHour();
+        if(stid.value==="" || stname.value==="" || courseName.value ==="" || tname.value==="" || stsec.value===""){
+          document.getElementById('pop-up-message').innerHTML="Please Fill up all requirements and try again";
+          document.getElementById('pop-up-message').style.textAlign = "center";
+          myPopup.classList.add("show"); 
+        }else if(Late ==="not Allow"){
+          document.getElementById('pop-up-message').innerHTML="Opps! Its look like your too late to take this attendance";
+          document.getElementById('pop-up-message').style.textAlign = "center";
+          myPopup.classList.add("show"); 
+        }else{
+              await deleteDoc(ToDeleteDoc);
+              ToSaveData();
+              document.getElementById('web-form').style="display: none;";
+              document.getElementById('pop-up-top').style="display:none";
+              document.getElementById('pop-up-message').innerHTML="Submit Successfully, please check the monitor in front or ask the teacher if its reflect";
+              document.getElementById('pop-up-message').style.textAlign = "center";
+              myPopup.classList.add("show");
+              setInterval(function() {
+                location.reload();
+            }, 5000);
+          }
+      })
+    
+      
+
+//Phone-view
+
+const cp_stid = document.getElementById('cp-stud-id');
+const cp_stname = document.getElementById('cp-stud-name');
+const cp_stsec = document.getElementById('cp-sect-name');
+const cp_courseName = document.getElementById('cp-course-name');
+const cp_tname = document.getElementById('cp-teacher-name');
+const qrbtn = document.getElementById('qr-btn');
+
+qrbtn.addEventListener('click', function() {
+  getDateHour();
+  if(cp_stid.value==="" || cp_stname.value==="" || cp_courseName.value ==="" || cp_tname.value==="" || cp_stsec.value===""){
+    document.getElementById('pop-up-message').innerHTML="Please Fill up all requirements and try again";
+    document.getElementById('pop-up-message').style.textAlign = "center";
+    myPopup.classList.add("show"); 
+  }else if(Late ==="not Allow"){
+    document.getElementById('pop-up-message').innerHTML="Opps! Its look like your too late to take this attendance";
+    document.getElementById('pop-up-message').style.textAlign = "center";
+    myPopup.classList.add("show");
+  }else{
+    myqrcode.classList.add("show");
+    document.getElementById('myqrcode').style="display: block;";
+    function domReady(fn) {
+        if (document.readyState === "complete" || document.readyState === "interactive") {
+            setTimeout(fn, 1);
+        } else {
+            document.addEventListener("DOMContentLoaded", fn);
+        }
+    }
+    domReady(function() {
+        var myqr = document.getElementById('you-qr-result');
+        var lastResult, counterResults = 0;
+        function onScanSuccess(decodeText, decodeResult) {
+            if (decodeText !== lastResult) {
+                ++counterResults;
+                lastResult = decodeText;
+                
+                //https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ROOMB1.28,B1-28_DESKTOPPCNUMBER-00,0,1
+                let qrResults = decodeText,decodeResult;
+                const Toseperate = qrResults.split(",");
+                qrResults = Toseperate[1];
+                const Desk = Toseperate[2];
+                const pcDisplay = Toseperate[3];
+                createData(qrResults,Desk,pcDisplay);
+                document.getElementById('web-form').style="display: none;";
+                document.getElementById('pop-up-top').style="display:none";
+                document.getElementById('pop-up-message').innerHTML="Submit Successfully, please check the monitor in front or ask the teacher if its reflect";
+                document.getElementById('pop-up-message').style.textAlign = "center";
+                myPopup.classList.add("show");
+                myqr.innerHTML = `You scanned ${decodeText}`;
+            }
+            
+        }
+        var htmlscanner = new Html5QrcodeScanner("my-qr-reader", { fps: 10, qrbox: 250 });
+        htmlscanner.render(onScanSuccess);
+    });
+  }
+});
+
+
+async function createData(pcnumber,Desk,pcDisplay){
+  
+  var ref = doc(client, "COMLAB-ATTENDANCE-TABLE",pcnumber);
+                setDoc( 
+                ref, {
+                    Desk : Desk,
+                    Status : "Occupied",
+                    Student_ID : cp_stid.value,
+                    Student_Name :cp_stname.value,
+                    Student_Section : cp_stsec.value,
+                    Student_Course : cp_courseName.value,
+                    Teacher_Name : cp_tname.value,
+                    Com_Unit_Num : pcDisplay,
+                    SchoolOnTime : Late,
+                    Date_Scan : getDateHour()
+            })
+        }
+
+closecamera.addEventListener("click", function () {
+myqrcode.classList.remove("show");
+document.getElementById('myqrcode').style="display: none;";
+  });
+  window.addEventListener("click", function (event) {
+  if (event.target == myqrcode) {
+    myqrcode.classList.remove("show");
+  }
+  });
+  closePopup.addEventListener("click", function () {
+    myPopup.classList.remove("show");
+  });
+  window.addEventListener("click", function (event) {
+  if (event.target == myPopup) {
+    myPopup.classList.remove("show");
+  }
+  });
+
+function getDateHour(){
+let date = new Date();
+let hours = date.getHours();
+let minutes = date.getMinutes();
+let ampm = hours >= 12 ? 'pm' : 'am';
+hours = hours % 12;
+hours = hours ? hours : 12; 
+minutes = minutes < 10 ? '0'+minutes : minutes;
+
+let strTime = hours + ':' + minutes + ampm;
+
+let day = ("0" + date.getDate()).slice(-2);
+let month = ("0" + (date.getMonth() + 1)).slice(-2);
+let year = date.getFullYear();
+let strDate =  month + "/" + day + "/" + year;
+let dateTime = strTime + " " + strDate;
+
+
+if(date.getMinutes() > 20){
+  Late = "true";
+} else if(date.getMinutes()>40) {
+  Late ="not Allow"
+}else{
+  Late = "false";
+}
+
+return dateTime
+}
+
+/*
+async function TypingCheck(){
+  const cells = document.getElementsByTagName('td');
+  let desk = 0;
+  db.collection("SOME-IS-TYPING").onSnapshot((querySnapshot) => {
+    if (querySnapshot.empty){
+      const ref = db.collection("SOME-IS-TYPING").doc(pcnumber);
+      ref.onSnapshot((docSnapshot) => {
+        if (docSnapshot.exists) {
+          const TypingData = docSnapshot.data();
+          const type = TypingData.TYPING;
+          desk = TypingData.Desk;
+          console.log(type);
+          
+          cells[desk].style = "background-color: purple; padding: 10px;";
+        }else{
+
+          cells[desk].style = "background-color: red;padding:10px;";
+        }
+      });
+    }
+  })
+}
+*/
+async function TypingCheckStudent(){
+  let noTyping = 0;
+  db.collection("SOME-IS-TYPING").onSnapshot((querySnapshot) => {
+    querySnapshot.forEach((studentdata) => {
+      const desk = studentdata.data().Desk;
+      const cells = document.getElementsByTagName('td');
+      cells[desk].style = "background-color: purple; padding: 10px; ";
+      noTyping = desk;
+  })
+  if (querySnapshot.size === 0) {
+    console.log("working");
+    const cells = document.getElementsByTagName('td');
+    cells[noTyping].style = "background-color: lightgreen; padding: 10px;";
+}
+  })
+}
+
+window.onload = function() {
+  //TypingCheck();
+  TypingCheckStudent();
+  checkSit();
+  };
