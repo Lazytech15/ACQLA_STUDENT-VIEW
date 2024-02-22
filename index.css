@@ -327,6 +327,25 @@ span.desk {
     color: rgb(59, 0, 0);
     cursor:pointer;
 }
+#openqr_btn{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(211, 211, 211, 0.767);
+    border-radius: 20px;
+    position: fixed;
+    top: 30%; 
+    left: 107px; 
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all 0.5s ease-in-out; 
+}
+#openqr_btn:hover{
+    background-color: yellowgreen;
+    color:blueviolet;
+}
 footer .copy-right{
     display: none;
 }
@@ -337,9 +356,6 @@ footer .copy-right{
     }
     .all-data-container{
         display: none;
-    }
-    .form-container{
-        display: flex;
     }
     .doors{
         display: none;
@@ -360,8 +376,11 @@ footer .copy-right{
             "wdth" 100;
     }
     .popup {
-        margin-top: 90px;
+        margin-top: 50px;
         
+    }
+    #openqr_btn{
+        display: block;
     }
     #my-qr-reader video{
         margin-bottom: 5px;
@@ -370,7 +389,7 @@ footer .copy-right{
         margin-bottom: 30px;
     }
     .you-qr-result{
-        margin-top: 220px;
+        margin-top: 180px;
     }
     footer .copy-right{
         display: flex;
