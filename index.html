@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>(ACQLA) Automated Com-Lab QR Log and Attendance</title>
+    <link rel="icon" type="image/png"  href="checklist.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="pop-up.css">
+</head>
+<body>
+    <div class="web-form" id="web-form">
+        <div class="web-form-content">
+            <button id="close_form">X</button>
+            <h1>ACQLA</h1>
+            <input type="text" id="stud-id" placeholder="STUDENT ID">
+            <input type="text" id="stud-name" placeholder="STUDENT NAME">
+            <input type="text" id="sect-name" placeholder="STUDENT SECTION">
+            <input type="text" id="course-name" placeholder="COURSE-CODE">
+            <input type="text" id="teacher-name" placeholder="TEACHER NAME">
+            <button id="save_btn">SAVE</button>
+        </div>
+    </div>
+    <div class="all-data-container">
+        <div class="other-display">
+            <div class="teacher-table">TEACHER TABLE</div>
+            <br>
+            <div class="tv-monitor"></div>
+            <h1>TV-MONITOR & WHITEBOARD</h1>
+            <br>
+        </div>
+    <div class="teacher-frontTable">
+        Front Table
+    </div>
+    
+        <div id="table-container">
+            <table class="table" id="table-one">
+                <thead>
+                    <tr id="first-row-firstset">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="first-row-firstset">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="first-row"></tbody>
+            </table>
+            <br>
+            <table class="table" id="table-two">
+                <thead>
+                    <tr id="first-row-secondset">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="first-row-secondset">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="second-row"></tbody>
+            </table>
+            <br>
+            <table class="table" id="table-third">
+                <thead>
+                    <tr id="first-row-thirdset">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="first-row-thirdset">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="third-row"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="doors">
+        <div id="main">FRONT DOOR</div>
+        <div class="copy-right">
+            &copy; <script>document.write(new Date().getFullYear())</script> Develop By Team <p>LoiGasm</p>
+        </div>
+        <div id="back">BACK DOOR</div>
+    </div>
+    <div class="form-container">
+        <div class="form-content">
+            <h1>ACQLA</h1>
+            <input type="text" id="stud-id" placeholder="STUDENT ID">
+            <input type="text" id="stud-name" placeholder="STUDENT NAME">
+            <input type="text" id="sect-name" placeholder="STUDENT SECTION">
+            <input type="text" id="course-name" placeholder="COURSE-CODE">
+            <input type="text" id="teacher-name" placeholder="TEACHER NAME">
+            <button id="qr-btn">QR</button>
+        </div>
+    </div>
+    <div id="myPopup" class="popup">
+        <div class="popup-content">
+              <span id="pop-up-top">System Notice!</span>
+              <br>
+            <p id="pop-up-message"></p>
+            <br>
+            <a id="closePopup">Close</a>
+        </div>
+    </div>
+    <div id="myqrcode" class="scanner-qr">
+        <div class="you-qr-result" id="you-qr-result"></div>
+            <div id="my-qr-reader">
+            </div>
+            <a id="closecamera">Close</a>
+        </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="https://unpkg.com/html5-qrcode"></script>
+<script type="module" src="index.js"></script>
+</html>
