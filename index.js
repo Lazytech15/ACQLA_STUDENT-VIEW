@@ -286,5 +286,3 @@ window.onload = function() {
   TypingCheckStudent();
   checkSit();
   };
-
-setInterval(location.reload(), 5000);
