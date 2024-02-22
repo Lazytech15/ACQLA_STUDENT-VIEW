@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .form-container{
@@ -74,8 +73,6 @@
     padding: 20px;
     margin: auto;
     border: 1px solid white;
-    width: 50%;
-    height: 23vh;
     font-weight: bolder;
     font-family: 'Roboto',serif;
     justify-content:center;
@@ -383,13 +380,31 @@ footer .copy-right{
         display: block;
     }
     #my-qr-reader video{
-        margin-bottom: 5px;
+        display: block;
     }
     #my-qr-reader{
         margin-bottom: 30px;
+        width: 90%;
+        height: 37%;
+    }
+    #qr-shaded-region{
+        display: none;
+    }
+    #my-qr-reader__scan_region{
+        height: 280px;
+        border-radius: 10px;
+    }
+    #html5-qrcode-button-camera-stop{
+        margin-top: -10px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    #html5-qrcode-button-camera-stop:hover{
+        background-color: yellowgreen;
     }
     .you-qr-result{
-        margin-top: 180px;
+        margin-top: 110px;
     }
     footer .copy-right{
         display: flex;
