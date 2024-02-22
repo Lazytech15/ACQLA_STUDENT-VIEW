@@ -137,7 +137,7 @@
             &copy; <script>document.write(new Date().getFullYear())</script> Develop By Team <p>LoiGasm</p>
         </div>
     </footer>
-    <div class="form-container">
+    <div class="form-container" id="form-container">
         <div class="form-content">
             <h1>ACQLA</h1>
             <input type="text" id="cp-stud-id" placeholder="STUDENT ID">
@@ -145,7 +145,7 @@
             <input type="text" id="cp-sect-name" placeholder="STUDENT SECTION">
             <input type="text" id="cp-course-name" placeholder="COURSE-CODE">
             <input type="text" id="cp-teacher-name" placeholder="TEACHER NAME">
-            <button id="qr-btn">QR</button>
+            <button id="qr-btn">SAVE</button>
         </div>
     </div>
     <div id="myPopup" class="popup">
@@ -163,6 +163,7 @@
             </div>
             <a id="closecamera">Close</a>
         </div>
+        <button id="openqr_btn">OPEN QR</button>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 <script src="https://unpkg.com/html5-qrcode"></script>
