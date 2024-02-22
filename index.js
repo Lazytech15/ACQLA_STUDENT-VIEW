@@ -115,8 +115,8 @@ const tname = document.getElementById('teacher-name');
 
       close_form.addEventListener('click', async function(){
         await deleteDoc(ToDeleteDoc);
-        //TypingCheck()
         TypingCheckStudent();
+        setInterval(location.reload(), 5000);
         document.getElementById('web-form').style="display: none;";
       })
       save_btn.addEventListener('click', async function(){
@@ -124,10 +124,7 @@ const tname = document.getElementById('teacher-name');
         ToSaveData();
         alert("Data Save Successfully");
         document.getElementById('web-form').style="display: none;";
-        setInterval(function() {
-          location.reload();
-        }, 2000);
-        
+        setInterval(location.reload(), 5000);
       })
       
 
@@ -290,14 +287,4 @@ window.onload = function() {
   checkSit();
   };
 
-  
-setInterval(function() {
-  if (count < 3) {
-    // Your function here
-    
-    count++;
-  } else {
-    location.reload();
-    count="";
-  }
-}, 15000);
+setInterval(location.reload(), 5000);
