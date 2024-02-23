@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <title>(ACQLA) Automated Com-Lab QR Log and Attendance</title>
     <link rel="icon" type="image/png"  href="checklist.png">
@@ -127,12 +127,12 @@
     </div>
     <div class="doors">
         <div id="main">FRONT DOOR</div>
-        <div class="copy-right">
+        <div class="copy-right fade-in-out">
             &copy; <script>document.write(new Date().getFullYear())</script> Develop By Team <p>LoiGasm</p>
         </div>
         <div id="back">BACK DOOR</div>
     </div>
-    <footer>
+    <footer class="fade-in-out">
         <div class="copy-right">
             &copy; <script>document.write(new Date().getFullYear())</script> Develop By Team <p>LoiGasm</p>
         </div>
@@ -145,7 +145,10 @@
             <input type="text" id="cp-sect-name" placeholder="STUDENT SECTION">
             <input type="text" id="cp-course-name" placeholder="COURSE-CODE">
             <input type="text" id="cp-teacher-name" placeholder="TEACHER NAME">
-            <button id="qr-btn">SAVE</button>
+            <div class="qr-save-btn">
+                <button id="qr-btn">SAVE</button>
+                <button id="cancel-btn">CANCEL</button>
+            </div>
         </div>
     </div>
     <div id="myPopup" class="popup">
