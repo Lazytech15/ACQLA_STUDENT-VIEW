@@ -64,7 +64,7 @@
     height: 100%;
     text-align: center;
     display: none;
-    background-color: rgba(0, 0, 0, 0.705);
+    background-color: rgba(0, 0, 0, 0.274);
 }
 #my-qr-reader{
     display:block;
@@ -73,17 +73,14 @@
     padding: 20px;
     margin: auto;
     border: 1px solid white;
+    width: 30%;
     font-weight: bolder;
     font-family: 'Roboto',serif;
     justify-content:center;
     text-align:center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    backdrop-filter: blur(50%);
-    -webkit-backdrop-filter: blur(50%);
-}
-#my-qr-reader video{
-    width: 100%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    margin-top: 90px;
 }
 #closecamera{
     border-radius: 5px;
@@ -380,29 +377,8 @@ footer .copy-right{
         display: block;
     }
     #my-qr-reader{
-        margin-bottom: 30px;
-        min-width: 70%;
-        height: 60%;
-    }
-    #qr-shaded-region{
-        display: none;
-    }
-    #my-qr-reader video{
-        width: 50%;
-        height: 30%;
-    }
-    #my-qr-reader__scan_region{
-        min-height: 280px;
-        border-radius: 10px;
-    }
-    #html5-qrcode-button-camera-stop{
-        margin-top: -10px;
-        min-width: 100%;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    #html5-qrcode-button-camera-stop:hover{
-        background-color: yellowgreen;
+        margin-top: 150px;
+        width: 300px;
     }
     .you-qr-result{
         margin-top: 110px;
