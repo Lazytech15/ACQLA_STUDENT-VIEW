@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
+body,html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body {
+    background-color: #ebebeb;
+}
+
 
 .form-container{
     margin-top: 200px;
@@ -52,7 +59,7 @@
     border-style:none;
     transition: all 0.5s ease-in-out;
 
-    font-family: "Open Sans", sans-serif;
+    font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
@@ -82,7 +89,7 @@
     border: 1px solid white;
     width: 30%;
     font-weight: bolder;
-    font-family: 'Roboto',serif;
+    font-family: 'Fredoka',serif;
     justify-content:center;
     text-align:center;
     backdrop-filter: blur(20px);
@@ -177,7 +184,8 @@
 .teacher-frontTable{
     color: blanchedalmond;
     background-color: lightsalmon;
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(190, 190, 190), -2px -2px 2px rgb(190, 190, 190);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,7 +194,7 @@
     width: 100px;
     height: 230px;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -214,7 +222,7 @@
     height: 60%;
 }
 h1{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -226,7 +234,7 @@ h1{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -252,14 +260,15 @@ h1{
 .teacher-table{
     color: blanchedalmond;
     background-color: lightsalmon;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 230px;
     height: 15%;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Fredoka", sans-serif;
+    box-shadow: 2px 2px 2px rgb(190, 190, 190), -2px -2px 2px rgb(190, 190, 190);
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -272,9 +281,10 @@ h1{
     margin-right: 30px;
 }
 table {
-    border-collapse: collapse;
+    border-collapse: unset;
     width: 10%;
 }
+
 td{
     white-space: nowrap;
     text-align: center;
@@ -282,21 +292,22 @@ td{
     font-size: 12px;
     color: white;
     font-family: verdana;
-    background-color: lightgreen;
+    background-color: #ffffff;
     cursor: pointer;
     border-radius: 20px;
-    border: 3px solid rgb(255, 255, 255);
-
-    font-family: "Open Sans", sans-serif;
+    border: 2px solid rgb(230, 219, 219);
+    box-shadow: 2px 2px 2px rgb(190, 190, 190), -2px -2px 2px rgb(190, 190, 190);
+    font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
+    transition: 200ms ease-in-out;
 }
 td:hover{
     transform: scale(1.1); 
-    transition: transform 0.4s ease-in-out; 
+    background-color: #dbdbdb;
 }
 .desk {
     display: flex;
@@ -314,7 +325,7 @@ span.desk {
 .copy-right{
     display: flex;
     margin-top: 20px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -379,7 +390,7 @@ footer .copy-right{
         overflow: hidden;
         height: 100vh;
         width: 100vw;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Fredoka", sans-serif;
         font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
