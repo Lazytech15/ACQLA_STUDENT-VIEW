@@ -7,6 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="pop-up.css">
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+    var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    var type = connection.effectiveType;
+
+    function updateConnectionStatus() {
+        if (type === '4g') {
+            // strong signal, no action needed
+        } else {
+            document.getElementById('pop-up-message').innerHTML="Your network signal is weak. Some features may not work optimally.";
+                    document.getElementById('pop-up-message').style.textAlign = "center";
+                    myPopup.classList.add("show");
+        }
+    }
+
+    connection.addEventListener('change', updateConnectionStatus);
+    updateConnectionStatus();
+});
+
+    </script>
 </head>
 <body>
     <div class="web-form" id="web-form">
